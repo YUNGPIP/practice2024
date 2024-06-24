@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Каталог IT-сервисов и приложений НПО АТ</title>
+  <style>
+    /* Общие стили */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+
+    /* Стили для header */
+    header {
+      background-color: #333;
+      color: #fff;
+      padding: 10px 0;
+    }
+
+    .header-content {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    /* Стили для каталога сервисов */
+    .service-list {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      grid-gap: 20px;
+    }
+
+    .service-card {
+      background-color: #f1f1f1;
+      padding: 20px;
+      border-radius: 5px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    .service-card img {
+      max-width: 100%;
+      height: auto;
+      margin-bottom: 10px;
+    }
+
+    .service-card h3 {
+      margin-top: 0;
+    }
+
+    .service-card p {
+      margin-bottom: 0;
+    }
+
+    .nav-ul{
+        display: flex;
+    }
+
+    .nav-ul>li{
+        margin: 0 10px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container header-content">
+      <h1>Каталог IT-сервисов и приложений</h1>
+      <nav>
+        <ul class="nav-ul">
+          <li><a href="#">Главная</a></li>
+          <li><a href="#">Категории</a></li>
+          <li><a href="#">Личный кабинет</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <div class="container">
+      <h2>Каталог сервисов и приложений</h2>
+      <!-- Примерный вид вывода каталога, потом будет реализован через PHP -->
+      <div class="service-list">
+        <div class="service-card">
+          <img src="logo1.png" alt="Сервис 1">
+          <h3>Сервис 1</h3>
+          <p>Краткое описание сервиса 1</p>
+        </div>
+        <div class="service-card">
+          <img src="logo2.png" alt="Сервис 2">
+          <h3>Сервис 2</h3>
+          <p>Краткое описание сервиса 2</p>
+        </div>
+        <div class="service-card">
+          <img src="logo3.png" alt="Сервис 3">
+          <h3>Сервис 3</h3>
+          <p>Краткое описание сервиса 3</p>
+        </div>
+      </div>
+    </div>
+  </main>
+</body>
+</html>
